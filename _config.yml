@@ -1,0 +1,30 @@
+
+
+title: It,s Me
+email: angel_beshirov@abv.bg
+description: ''
+description: ''
+destination: docs
+baseurl: "/It-s_Me" 
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: don'tHAVE
+github_username:  AngelBWD
+
+
+# Build settings
+plugins:
+  - jekyll-feed
+
+
+exclude:
+- .sass-cache/
+- .jekyll-cache/
+- gemfiles/
+- Gemfile
+- Gemfile.lock
+- node_modules
+- node_modules/
+- vendor/bundle/
+- vendor/cache/
+- vendor/gems/
+- vendor/ruby/

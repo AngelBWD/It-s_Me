@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+
+
+    <link rel="stylesheet" href="{{ site.baseurl }}/css/site.css">
+    <link rel="stylesheet" href='{{ site.baseurl }}/fontawesome/css/all.min.css'>
+    <link rel="stylesheet" href='{{ site.baseurl }}/fontawesome/css/bootstrap.min.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script>
+        window.addEventListener('load', event => {
+            document.querySelector('body').classList.add('loaded')
+        });
+    </script>
+</head>
+
+<body class="page-{{ page.title | slugify }}">
+
+      <!-- Start Header -->
+    <header class="header_area">
+        <div class="main-menu">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" id="home" href="#home"><img src="{{ site.baseurl }}../images/logoo.jpg" width="150px" height="65px" alt="logo"></a>  
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <div class="mr-auto"></div>
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="{{ site.baseurl }}#home">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ site.baseurl }}../index.html#about">about</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ site.baseurl }}../index.html#projects">portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ site.baseurl }}#contacts">contact</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- End Header -->
+
+      
+        <main class="site-main" >
+                {{ content }}
+        </main>
+
+        <footer class="footer-area">
+            <div class="container">
+                <div class="">
+                    <div class="site-logo text-center py-4">
+                        <a href="{{ site.baseurl }}#home"><img src="{{ site.baseurl }}../images//logoo.jpg" alt="logo"></a>
+                    </div>
+                    <div class="social text-center">
+                        <h5 class="text-uppercase" id="contacts">Follow me</h5>
+                        <a href="https://www.facebook.com/angel.beshirov" target="_blank"><i class="fa fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/angel_beshirov/" target="_blank"><i class="fa fa-instagram"></i></a>
+                        <a href="https://github.com/AngelBWD" target="_blank"><i class="fa fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/angel-beshirov/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                    </div>
+                    <div class="copyrights text-center">
+                        <p class="para">
+                            Copyright ©2020 All rights reserved | This template is made  by
+                            <a href="{{ site.baseurl }}../index.html#Angel"><span style="color: var(--primary-color);">Angel Beshirov</span></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+   
+        <script src="../js/jquery3.5.1.js"></script>
+        <script src="../js/bootstrap.min.js"></script>
+        <script src="../vendor/isotope/isotope.min.js"></script>
+        <script src="../js/main.js"></script>
+
+</body>
+
+</html>

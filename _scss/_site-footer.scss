@@ -1,0 +1,30 @@
+footer .footer-area {
+    padding: 5rem 0;
+    background: url(../img/footer-bg.png) no-repeat;
+}
+
+footer .footer-area .social h5 {
+    font: normal 500 23px/30px var(--roboto);
+}
+
+footer.footer-area .social a > i{
+    font-size:22px;
+    padding: 2rem;
+    color: gray;
+}
+
+footer.footer-area .social a:hover .fa-facebook {
+    color: blue;
+}
+
+footer.footer-area .social a:hover .fa-instagram {
+    color: #D42F6E;
+}
+
+footer.footer-area .social a:hover .fa-github {
+    color: #000;
+}
+
+footer.footer-area .social a:hover .fa-linkedin {
+    color: #0073B2;
+}
