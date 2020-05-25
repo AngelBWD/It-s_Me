@@ -12,3 +12,71 @@
   padding: .2rem 0;
 }
 
+@include bp(mobile) {
+  .header_area .main-menu .navbar,
+  .header_area .main-menu .navbar .navbar-brand {
+      padding: 2%;
+      margin: 0%;
+  }
+
+  .header_area .main-menu .nav-item .nav-link {
+    padding: 1.7rem 0;
+  }
+
+  .header_area .main-menu .navbar-nav  a {
+    padding: 0;
+  }
+
+  .header_area .main-menu .navbar .navbar-brand {
+    padding: 0 !important;
+  }
+
+  .header_area .main-menu .navbar {
+    padding: 1rem 1rem !important;
+  }
+
+  .site-main .site-banner .site-title h4{
+    font-size: 28px;
+  }
+
+  .site-main .site-banner .site-title h3{
+    font-size: 32px;
+  }
+  .site-main .site-banner .site-title h1{
+      font-size: 36px;
+  }
+
+  .site-main .about-area {
+    padding: 2%;
+    margin: 2%;
+  }
+
+  .site-main .about-area .container-fluid {
+    padding: 0;
+  }
+
+  .site-main .about-area .container-fluid .row .about-title .w-75 {
+    width: 100%!important;
+  }
+
+  .site-main .about-area .container-fluid .row .about-image {
+    padding-right: 35%;
+  }
+
+  .site-main .about-area .about-title h2>span {
+    display: block;
+    font: normal bold 32px/40px var(--roboto); 
+    letter-spacing: 8px;
+  }
+
+  .site-main .about-area .about-title .paragraph p {
+    width: 100%;
+    margin: 0%;
+  }
+
+  .header_area .main-menu .navbar{
+    padding: 1rem 1rem ;
+  }
+
+}
+
